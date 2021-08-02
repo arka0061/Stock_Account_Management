@@ -1,0 +1,22 @@
+{
+  "StockList": [
+    {
+
+      "stockName": "Brownie",
+      "numberOfShares": 50,
+      "sharePrice": 700.0
+    },
+    {
+
+      "stockName": "Oreo",
+      "numberOfShares": 60,
+      "sharePrice": 200.0
+    },
+    {
+      "stockName": "Bmw",
+      "numberOfShares": 90,
+      "sharePrice": 800.0
+    }
+  ]
+  
+}
