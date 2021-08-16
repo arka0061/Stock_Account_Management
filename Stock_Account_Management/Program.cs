@@ -7,37 +7,37 @@ namespace Stock_Account_Management
        public const String Inventory_Json = @"E:\Bridglabz\Stock_Account_Management\Stock_Account_Management\InventoryManagement\InventoryOfStocks.json"; //@ define path
         static void Main(string[] args)
         {
-            String Choice = "";
+            String choice = "";
             InventoryManager main = new InventoryManager();         
             Console.WriteLine("Enter 'add' if u want to ADD an ACCOUNT");
             Console.WriteLine("Enter 'buy' if u want to BUY some shares");
             Console.WriteLine("Enter 'valueof' if u want to Display SHARES of an ACCOUNT");
             Console.WriteLine("Enter 'printreport' if u want to Display SHARES of ALL ACCOUNTS");
             Console.WriteLine("Enter stop to exit!");
-            while (Choice != "stop")
+            while (choice != "stop")
             {
-                Choice = Console.ReadLine().ToLower();
-                switch (Choice)
+                choice = Console.ReadLine().ToLower();
+                switch (choice)
                 {                   
                   
                    case "add":
-                               main.addAccount(Inventory_Json);
+                               main.AddAccount(Inventory_Json);
                                break;
 
                     case "valueof":
-                               main.valueOf(Inventory_Json);
+                               main.ValueOf(Inventory_Json);
                                break;
 
                     case "buy":
-                               main.buy();
+                               main.Buy();
                                break;
 
                     case "sell":
-                               main.sell();
+                               main.Sell();
                                break;
 
                     case "printreport":
-                               main.printReport(Inventory_Json);
+                               main.PrintReport(Inventory_Json);
                                break;
                 }
             }

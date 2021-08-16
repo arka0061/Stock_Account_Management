@@ -10,7 +10,7 @@ namespace Stock_Account_Management.InventoryManagement
     public class InventoryManager
     {
 
-        public void addAccount(String filepath)
+        public void AddAccount(String filepath)
         {
             string jsonData = File.ReadAllText(filepath);
             InventoryModel jsonObjectArray = JsonConvert.DeserializeObject<InventoryModel>(jsonData);
@@ -28,7 +28,7 @@ namespace Stock_Account_Management.InventoryManagement
             Console.WriteLine("Enter your Choice!");
 
         }
-        public void valueOf(String filepath)
+        public void ValueOf(String filepath)
         {
             try
             {
@@ -79,7 +79,7 @@ namespace Stock_Account_Management.InventoryManagement
             }
         }
 
-        public void buy()
+        public void Buy()
         {
             Stock obj = new Stock();
             Program pro = new Program();
@@ -184,7 +184,7 @@ namespace Stock_Account_Management.InventoryManagement
             InventoryManager.WriteToFile(jsonObjectArray);
         }
 
-        public void sell()
+        public void Sell()
         {
             Stock obj = new Stock();
             string jsonData = File.ReadAllText(Program.Inventory_Json);
@@ -230,7 +230,7 @@ namespace Stock_Account_Management.InventoryManagement
             System.IO.File.WriteAllText(@"E:\Bridglabz\Stock_Account_Management\Stock_Account_Management\InventoryManagement\InventoryOfStocks.json", jsonConvrsion);
         }
 
-        public void printReport(String filepath)
+        public void PrintReport(String filepath)
         {
             try
             {
